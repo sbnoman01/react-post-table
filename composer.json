@@ -1,0 +1,16 @@
+{
+    "name": "abdullah/react-post-table",
+    "description": "React post table to get post from wordpress and show in a custom admin menu page",
+    "autoload": {
+        "psr-4": {
+            "Abdullah\\ReactPostTable\\": "includes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sbnoman01",
+            "email": "sbnoman27@gmail.com"
+        }
+    ],
+    "require": {}
+}

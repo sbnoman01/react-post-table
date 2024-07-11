@@ -1,0 +1,24 @@
+{
+  "name": "react-post-table",
+  "version": "1.0.0",
+  "description": "React post table to get post from wordpress and show in a custom admin menu page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^28.3.0"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.24.8",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7",
+    "axios": "^1.7.2",
+    "react-router-dom": "^6.24.1"
+  }
+}
