@@ -54,9 +54,23 @@ class React_Post_Table
      *
      * @return void
      */
-    function react_post_assets() {
+    function react_post_assets( $admin_page ) {
+
+        if ( 'toplevel_page_react-post' !== $admin_page ) {
+            return;
+        }
+
+        $asset_file = plugin_dir_path( __FILE__ ) . 'build/index.asset.php';
+
+        if ( ! file_exists( $asset_file ) ) {
+            return;
+        }
+
+        $asset = include $asset_file;
+// wp_enqueue_style( 'wp-components' );
+
         wp_enqueue_style( 'reactpost-style', plugin_dir_url( __FILE__ ) . 'build/index.css' );
-        wp_enqueue_script( 'reactpost-script', plugin_dir_url( __FILE__ ) . 'build/index.js', array( 'wp-element' ), '1.0.0', true );
+        wp_enqueue_script( 'reactpost-script', plugin_dir_url( __FILE__ ) . 'build/index.js', $asset['dependencies'], '1.0.0', true );
     }
 }
 new React_Post_Table();

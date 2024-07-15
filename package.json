@@ -10,15 +10,22 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@wordpress/scripts": "^28.3.0"
-  },
   "dependencies": {
     "@babel/cli": "^7.24.8",
     "@babel/core": "^7.24.8",
     "@babel/preset-env": "^7.24.8",
     "@babel/preset-react": "^7.24.7",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.16.1",
+    "@mui/material": "^5.16.1",
+    "@mui/x-date-pickers": "^7.10.0",
+    "@wordpress/api-fetch": "^7.3.0",
+    "@wordpress/components": "^28.3.0",
+    "@wordpress/scripts": "^27.9.0",
     "axios": "^1.7.2",
+    "material-react-table": "^2.13.0",
+    "primereact": "^10.7.0",
     "react-router-dom": "^6.24.1"
   }
 }
